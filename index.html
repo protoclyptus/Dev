@@ -11,6 +11,7 @@
 <input id="email" placeholder="email"></input>
 <button id="send">Send</button>
 <script>
+$('document').ready(function(){
 $('#send').click(function(){ 
   var name = $('#name').value();
   var email = $('#email').value();
@@ -24,6 +25,7 @@ $('#send').click(function(){
 }).then(
     message => alert(message)
     );
+});
 </script>
 
 </body>
