@@ -12,19 +12,18 @@
 <button id="send">Send</button>
 <script>
 $('document').ready(function(){
-$('#send').click(function(){ 
-  var name = $('#name').value();
-  var email = $('#email').value();
+  $('#send').click(function(){ 
+    var name = $('#name').value();
+    var email = $('#email').value();
   
-  Email.send({
-    SecureToken : "376f7a04-7f30-4987-b103-5e2384000775",
-    To : email,
-    From : "jordan.gidman@thewirelessexperience.com",
-    Subject : "Test",
-    Body : "hello " + name + "test"
-}).then(
-    message => alert(message)
-    );
+    Email.send({
+      SecureToken : "376f7a04-7f30-4987-b103-5e2384000775",
+      To : email,
+      From : "jordan.gidman@thewirelessexperience.com",
+      Subject : "Test",
+      Body : "hello " + name + "test"
+    });
+ });
 });
 </script>
 
