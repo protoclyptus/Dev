@@ -9,9 +9,11 @@
 <body>
 <input id="name" placeholder="name"></input>
 <input id="email" placeholder="email"></input>
-<button onclick="alert('test');">Send</button>
+<button id="send">Send</button>
 <script>
-
+$('#send').click(function(){ 
+  alert('test');
+});
 </script>
 
 </body>
